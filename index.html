@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form class="registration-form">
+            <h2>Registration Form</h2>
+            <p class="subtitle">Please fill out this form with the required information</p>
+            
+            <label>First Name:</label>
+            <input type="text" required>
+            
+            <label>Last Name:</label>
+            <input type="text" required>
+            
+            <label>Email:</label>
+            <input type="email" required>
+            
+            <label>Create Password:</label>
+            <input type="password" required>
+            
+            <hr>
+            
+            <label>College Course:</label>
+            <select name="program" required>
+                <option value="">Select course</option>
+                <option value="bsit">BSIT</option>
+                <option value="bscs">BSEE</option>
+                <option value="bsece">BSME</option>
+                <option value="bsmath">BSCE</option>
+            </select>
+
+            <label>Year Level:</label>
+            <select name="level" required>
+                <option value="">Select year level</option>
+                <option value="1st">1st Year</option>
+                <option value="2nd">2nd Year</option>
+                <option value="3rd">3rd Year</option>
+                <option value="4th">4th Year</option>
+            </select>
+            
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" required>
+                    I accept the <a href="#">terms and conditions</a>
+                </label>
+            </div>
+            
+            <p class="privacy-note">
+                The school ensures data protection by adhering to relevant privacy laws, applying encryption, and requiring informed consent before any external sharing.
+            </p>
+            
+            <hr>
+            
+            <label>Upload a profile picture:</label>
+            <input type="file" accept="image/*">
+            
+            <label>Birthdate:</label>
+            <input type="date" name="birthdate" required min="1900-01-01" max="2099-12-31" pattern="\d{4}-\d{2}-\d{2}">
+            
+            <label>Specialization:</label>
+            <select required>
+                <option value="">Select one</option>
+                <option>Web</option>
+                <option>Mobile</option>
+                <option>Data Science</option>
+                <option>AI</option>
+            </select>
+            
+            <label>Bio:</label>
+            <textarea placeholder="I like coding on the beach..." rows="2"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
